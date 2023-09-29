@@ -21,7 +21,7 @@ const Register = () => {
 
       // const storageRef = ref(storage, displayName);
 
-      const storageRef = ref(storage, `userAvatars/${displayName}`);
+      const storageRef = ref(storage, `${displayName}`);
       const uploadTask = uploadBytesResumable(storageRef, file);
       uploadTask.on(
         (error) => {
